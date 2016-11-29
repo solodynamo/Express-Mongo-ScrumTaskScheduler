@@ -9,6 +9,11 @@ router.get('/', function(req, res, next) {
 });
 router.get('/newNote', function(req, res, next) {
   return meetingCtrl.getNote(req,res);
-  });
+
+});
+
+router.post('/newNote' , function(req , res){
+  return meetingCtrl.create(req , res);
+})
 
 module.exports = router;

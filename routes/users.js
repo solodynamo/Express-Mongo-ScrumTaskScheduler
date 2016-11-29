@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/' ,function( req ,res)
 {
-  console.log("hiiy ueadh just executed next()");
+  console.log("hiiy ueadh just USERexecuted next()");
 })
 
 module.exports = router;
