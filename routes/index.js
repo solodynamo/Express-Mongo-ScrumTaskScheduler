@@ -5,15 +5,15 @@ var meetingCtrl = require('../controllers/officemgmt.server.controller');
 
 
 router.get('/', function(req, res, next) {
- return meetingCtrl.getIndex(req, res);
+    return meetingCtrl.getIndex(req, res);
 });
 router.get('/newNote', function(req, res, next) {
-  return meetingCtrl.getNote(req,res);
+    return meetingCtrl.getNote(req, res);
 
 });
 
-router.post('/newNote' , function(req , res){
-  return meetingCtrl.create(req , res);
+router.post('/newNote', function(req, res) {
+    return meetingCtrl.create(req, res);
 })
 
 module.exports = router;

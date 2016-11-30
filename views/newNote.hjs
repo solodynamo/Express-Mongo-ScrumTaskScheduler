@@ -1,108 +1,114 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>{{ title }}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
 </head>
+
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Nxtlife Task Scheduler</a>
+                <a class="navbar-brand" href="#">Nxtlife Task Scheduler</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li class="active"><a href="/newnote">New Note</a></li>
+                    <!-- <li><a href="/discuss">Discuss</a></li> -->
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
         </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
-                <li class="active"><a href="/newnote">New Note</a></li>
-                <!-- <li><a href="/discuss">Discuss</a></li> -->
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
-</div>
-
-<div class="container">
-
-    <div class="text-center">
-        <h1>New Virtual Meeting Note</h1>
-        <p class="lead">Use this form to enter your daily meeting notes...</p>
     </div>
 
-    <form class="form-horizontal" action="newnote" method="post">
-        <fieldset>
+    <div class="container">
 
-            <!-- Form Name -->
-            <legend>Enter a Meeting Note</legend>
+        <div class="text-center">
+            <h1>New Virtual Meeting Note</h1>
+            <p class="lead">Use this form to enter your daily meeting notes...</p>
+        </div>
 
-            <!-- Select Basic -->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="memberName">Name</label>
-                <div class="col-md-4">
-                    <select id="memberName" name="memberName" class="form-control">
+        <form class="form-horizontal" action="newnote" method="post">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>Enter a Meeting Note</legend>
+
+                <!-- Select Basic -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="memberName">Name</label>
+                    <div class="col-md-4">
+                        <select id="memberName" name="memberName" class="form-control">
                         <option value="None">(Select Name)</option>
-                        <option value="Mark">Mark</option>
-                        <option value="David">David</option>
-                        <option value="John">John</option>
-                        <option value="Mary">Mary</option>
+                        <option value="Tushar">Tushar</option>
+                        <option value="Ankit">Ankit</option>
+                        <option value="Ajay">Ajay</option>
+                        <option value="Vinay">Vinay</option>
+                        <option value="Pankaj">Pankaj</option>
                     </select>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Select Basic -->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="project">Current Project or Task</label>
-                <div class="col-md-4">
-                    <select id="project" name="project" class="form-control">
+                <!-- Select Basic -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="project">Current Project or Task</label>
+                    <div class="col-md-4">
+                        <select id="project" name="project" class="form-control">
                         <option value="None">(Select Project)</option>
-                        <option value="matrix"> API Development</option>
-                        <option value="trinity"> UI Development</option>
-                        <option value="morpheus"> Data Integration</option>
+                        <option value="yugma"> Yugma App</option>
+                        <option value="design"> UI Development</option>
+                        <option value="backend">Backend</option>
                     </select>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Textarea -->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="workYesterday">What did you work on yesterday?</label>
-                <div class="col-md-6">
-                    <textarea class="form-control" id="workYesterday" name="workYesterday">Yesterday</textarea>
+                <!-- Textarea -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="workYesterday">What did you work on yesterday?</label>
+                    <div class="col-md-6">
+                        <textarea class="form-control" id="workYesterday" name="workYesterday">Yesterday</textarea>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Textarea -->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="workToday">What will you work on today?</label>
-                <div class="col-md-6">
-                    <textarea class="form-control" id="workToday" name="workToday">Today</textarea>
+                <!-- Textarea -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="workToday">What will you work on today?</label>
+                    <div class="col-md-6">
+                        <textarea class="form-control" id="workToday" name="workToday">Today</textarea>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Textarea -->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="impediment">Any Impediment(s)?</label>
-                <div class="col-md-6">
-                    <textarea class="form-control" id="impediment" name="impediment">None</textarea>
+                <!-- Textarea -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="impediment">Any Impediment(s)?</label>
+                    <div class="col-md-6">
+                        <textarea class="form-control" id="impediment" name="impediment">None</textarea>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Button -->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="btnSaveNote">Save Note</label>
-                <div class="col-md-4">
-                    <button id="btnSaveNote" name="btnSaveNote" class="btn btn-primary" type="submit">Save</button>
+                <!-- Button -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="btnSaveNote">Save Note</label>
+                    <div class="col-md-4">
+                        <button id="btnSaveNote" name="btnSaveNote" class="btn btn-primary" type="submit">Save</button>
+                    </div>
                 </div>
-            </div>
 
-        </fieldset>
-    </form>
+            </fieldset>
+        </form>
 
 
-</div><!-- /.container -->
+    </div>
+    <!-- /.container -->
 </body>
+
 </html>
