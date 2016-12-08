@@ -4,7 +4,7 @@ var Meeting = require('../models/officemgmt.server.model');
 exports.getNote = function(req, res) {
     console.log("sklfjklsf");
     res.render('newNote', {
-        title: 'Standup - New Note'
+        title: 'TaskScheduler - New Note'
     });
 };
 exports.getIndex = function(req, res) {

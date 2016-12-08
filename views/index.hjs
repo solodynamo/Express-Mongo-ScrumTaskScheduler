@@ -62,7 +62,7 @@
 
         <div class="container">
         <div class="col-md-12 column list-group">
-            {% for note in notes %}
+            {{ for note in notes }}
             <div class="list-group-item">
                 <div>Note from <em><strong>{{ note.memberName }}</strong></em> on: {{ note.createdOn.toDateString() }}
                      - for project: <strong>{{ note.project }}</strong></div>
@@ -70,7 +70,7 @@
                 <div><strong>Work today:</strong> {{ note.workToday }}</div>
                 <div><strong>Impediment:</strong> {{ note.impediment }}</div>
             </div>
-            {% endfor %}
+            {{ endfor }}
         </div>
 
     </div>
