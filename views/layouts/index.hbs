@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>{{ title }}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='../stylesheets/style.css' />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"/>
 </head>
@@ -31,7 +31,7 @@
 
     <div class="text-center">
         <h1>Nxtlife Meeting Notes</h1>
-        <p class="lead">This is a list of the last dozen meeting notes that were entered in. </p>
+        <p class="lead">{{message}}</p>
     </div>
 
     <div>
@@ -59,21 +59,6 @@
             </form>
         </div>
         <br />
-
-        <div class="container">
-        <div class="col-md-12 column list-group">
-            {{ for note in notes }}
-            <div class="list-group-item">
-                <div>Note from <em><strong>{{ note.memberName }}</strong></em> on: {{ note.createdOn.toDateString() }}
-                     - for project: <strong>{{ note.project }}</strong></div>
-                <div><strong>Work yesterday:</strong> {{ note.workYesterday }}</div>
-                <div><strong>Work today:</strong> {{ note.workToday }}</div>
-                <div><strong>Impediment:</strong> {{ note.impediment }}</div>
-            </div>
-            {{ endfor }}
-        </div>
-
-    </div>
 
 </div><!-- /.container -->
 </body>

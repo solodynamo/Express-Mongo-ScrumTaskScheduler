@@ -8,8 +8,8 @@ exports.getNote = function(req, res) {
 };
 exports.getIndex = function(req, res) {
     res.render('index', {
-        title: 'Express',
-        name: 'ankit'
+        title: 'TaskScheduler',
+        message: 'This is a list of the last dozen meeting notes that were entered in.'
     });
 }
 
