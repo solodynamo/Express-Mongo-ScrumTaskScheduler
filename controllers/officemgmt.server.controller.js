@@ -3,7 +3,7 @@ var Meeting = require('../models/officemgmt.server.model');
 
 exports.getNote = function(req, res) {
     res.render('newNote', {
-        title: 'TaskScheduler - New Note'
+        title: 'New Task Log'
     });
 };
 exports.getIndex = function(req, res) {
