@@ -1,5 +1,4 @@
 <div class="container">
-
     <div class="text-center">
         <h1>Nxtlife Meeting Notes</h1>
         <p class="lead">{{message}}</p>
@@ -13,8 +12,8 @@
                 <div class="row clearfix">
                     <div class="col-md-4 column">
                         <select id="memberName" name="memberName" class="form-control">
-                            <option>(Show All Members)</option>
-                            <option>Ankit</option>
+                            <option>All</option>
+                            <option>ankit</option>
                             <option>Tushar</option>
                             <option>Ajay</option>
                             <option>Dhyan'er</option>
@@ -24,12 +23,25 @@
                     </div>
                     <div class="col-md-8 column">
                         <!-- Button -->
-                        <button id="btnFilterNotes" name="btnFilterNotes" class="btn btn-primary" type="submit">Filter Notes...</button>
+                        <button id="btnFilterNotes" name="btnFilterNotes" class="btn btn-primary" type="submit">Filter Task</button>
                     </div>
                 </div>
             </form>
         </div>
-        <br/>
 
+         <div class="container">
+            <div class="col-md-12 column list-group">
+                {{#each notes }}
+                <div class="list-group-item">
+                    <div>Task from <em><strong>{{ this.memberName }}</strong></em>Done on: {{ this.createdOn}}
+                        - for project: <strong>{{ this.project }}</strong></div>
+                    <div><strong>Work yesterday:</strong> {{ this.workYesterday }}</div>
+                    <div><strong>Work today:</strong> {{ this.workToday }}</div>
+                    <div><strong>Impediment:</strong> {{ this.impediment }}</div>
+                </div>
+                {{/each}}
+            </div>
+
+        </div>
     </div>
     <!-- /.container -->
