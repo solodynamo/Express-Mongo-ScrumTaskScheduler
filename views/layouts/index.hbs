@@ -29,10 +29,10 @@
             </form>
         </div>
 
-         <div class="container">
-            <div class="col-md-12 column list-group">
+         <div class="container" >
+            <div class="col-md-12 column list-group" >
                 {{#each notes }}
-                <div class="list-group-item">
+                <div class="list-group-item" id="NoteShow">
                     <div>Task from <em><strong>{{ this.memberName }}</strong></em>Done on: {{ this.createdOn}}
                         - for project: <strong>{{ this.project }}</strong></div>
                     <div><strong>Work yesterday:</strong> {{ this.workYesterday }}</div>

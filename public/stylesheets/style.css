@@ -1,9 +1,21 @@
+@font-face {
+  font-family: "Stoner";
+  src: url("../fonts/goodtimesrg.ttf") format("truetype");
+}
+
 
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Stoner" ;
+  font-weight: lighter;
 }
 
 a {
   color: #00B7FF;
+}
+
+#NoteShow {
+	padding-top: 5px;
+	text-align: center;
+	background-color: #F6F6F6;
 }
