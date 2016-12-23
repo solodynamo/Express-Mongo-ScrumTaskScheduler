@@ -2,8 +2,6 @@
   font-family: "Stoner";
   src: url("../fonts/goodtimesrg.ttf") format("truetype");
 }
-
-
 body {
   padding: 50px;
   font-family: "Stoner" ;
@@ -15,7 +13,29 @@ a {
 }
 
 #NoteShow {
-	padding-top: 5px;
+	padding:2px;
 	text-align: center;
-	background-color: #F6F6F6;
+	height:200px;
+	border-radius: 10px;
+	line-height: 40px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5 )
 }
+#indexHead {
+	text-shadow: 1px 1px 5px rgba(0,0,0,0.5);	
+}
+section {
+	
+	color: white;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: grey;
+    background: white;
+    background-image: none;
+}
+.navbar-inverse {
+    background-color: white;
+    border-color: white;
+    background-image: none;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+

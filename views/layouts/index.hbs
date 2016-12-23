@@ -1,6 +1,6 @@
 <div class="container">
     <div class="text-center">
-        <h1>Nxtlife Meeting Notes</h1>
+        <h1 id="indexHead">Nxtlife Meeting Notes</h1>
         <p class="lead">{{message}}</p>
     </div>
 
@@ -23,14 +23,14 @@
                     </div>
                     <div class="col-md-8 column">
                         <!-- Button -->
-                        <button id="btnFilterNotes" name="btnFilterNotes" class="btn btn-primary" type="submit">Filter Task</button>
+                        <button id="btnFilterNotes" name="btnFilterNotes" class="btn btn-link" type="submit">Filter Task</button>
                     </div>
                 </div>
             </form>
         </div>
 
          <div class="container" >
-            <div class="col-md-12 column list-group" >
+            <div class="col-md-12 column list-group">
                 {{#each notes }}
                 <div class="list-group-item" id="NoteShow">
                     <div>Task from <em><strong>{{ this.memberName }}</strong></em>Done on: {{ this.createdOn}}
