@@ -42,3 +42,21 @@ section {
     box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
+@media all and (max-width: 800px) {
+ .navbar-toggle {
+		background: rgba(0,0,0,0.5);
+	}
+}
+
+@media all and (max-width: 600px) {
+
+body{
+	width:100%;
+}
+#indexHead {
+	font-size: 20px;
+}	
+#NoteShow {
+	width:90%;
+}
+}
