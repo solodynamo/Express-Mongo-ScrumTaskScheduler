@@ -5,7 +5,7 @@
 Getting Built on Express,Mongoose and Handlebars.
 
 ##Snap
-<img src="http://i.imgur.com/KjmyHAo.png" width="600" alt="Sky Blue"/>
+<img src="http://i.imgur.com/rEcHwFg.png" width="600" alt="Sky Blue"/>
 
 ## Usage
 
