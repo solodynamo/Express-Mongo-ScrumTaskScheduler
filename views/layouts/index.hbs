@@ -33,8 +33,9 @@
             <div class="col-md-12 column list-group">
                 {{#each notes }}
                 <div class="list-group-item" id="NoteShow">
-                    <div>Task from <em><strong>{{ this.memberName }}</strong></em>Done on: {{ this.createdOn}}
-                        - for project: <strong>{{ this.project }}</strong></div>
+                    <div><strong>{{ this.memberName }}</strong><em>Worked on :<strong> {{ this.project }}</strong></em>
+                    </div>
+                    <div><strong>Done on:</strong> {{ this.createdOn}}</div>
                     <div><strong>Work yesterday:</strong> {{ this.workYesterday }}</div>
                     <div><strong>Work today:</strong> {{ this.workToday }}</div>
                     <div><strong>Impediment:</strong> {{ this.impediment }}</div>
